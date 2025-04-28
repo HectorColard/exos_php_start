@@ -29,11 +29,19 @@ require_once '../inc/functions.php';
 /* Je déclare mes variables */
 $a = 1;
 $b = 2;
-/* Je définis ma function avec mes paramètres*/
-function addition($a, $b)
+$c = 2;
+/* Je définis ma function avec mes paramètres et je mets une valeur de base à c pour la rendre optionnelle*/
+function addition($a, $b, $c = 0)
 {
+    /* Si c est supérieur à 0 */
+    if ($c > 0) {
+        /* On additionne a, b et c */
+        return $a + $b + $c;
+    } else {
+        /* Sinon, on n'additionne que a et b */
+        return $a + $b;
+    }
     /* Je retourne l'addition de mes 2 variables */
-    return $a + $b;
 }
 //-------------------------------------------------------------------------
 /*
