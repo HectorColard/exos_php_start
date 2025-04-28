@@ -26,7 +26,7 @@ require_once '../inc/functions.php';
  * $somme = addition(1, 3, 1); // => $somme sera égal à 5
  */
 //-------------------------------------------------------------------------
-/* Je déclare mes variables. */
+/* Je déclare mes variables */
 $a = 1;
 $b = 2;
 /* Je définis ma function avec mes paramètres*/
