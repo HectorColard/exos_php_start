@@ -25,7 +25,11 @@ require_once '../inc/functions.php';
 
  // A toi de jouer pour l'étape a)
 //-------------------------------------------------------------------------
-
+$characters = array(
+    "kyle" => "Kyle",
+    "Stan" => "Stan",
+    "Kenny" => "Kenny"
+);
 //-------------------------------------------------------------------------
 /*
  * Tests du tableau avec uniquement Stan, Kyle et Kenny
@@ -35,7 +39,12 @@ check('3a');
 
 // A toi de jouer pour l'étape b)
 //-------------------------------------------------------------------------
-
+$characters = array(
+    "kyle" => "Kyle",
+    "Stan" => "Stan",
+    "Kenny" => "Kenny"
+);
+array_push($characters, "Cartman");
 //-------------------------------------------------------------------------
 /*
  * Tests du tableau avec Stan, Kyle, Kenny et désormais Cartman
@@ -45,7 +54,13 @@ check('3b');
 
 // A toi de jouer pour le bonus
 //-------------------------------------------------------------------------
-
+$characters = array(
+    "kyle" => "Kyle",
+    "Stan" => "Stan",
+    "Kenny" => "Kenny"
+);
+array_push($characters, "Cartman");
+array_splice($characters, 2, 1);
 //-------------------------------------------------------------------------
 
 /*
