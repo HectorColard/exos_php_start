@@ -26,7 +26,22 @@ require_once '../inc/functions.php';
  * $somme = addition(1, 3, 1); // => $somme sera égal à 5
  */
 //-------------------------------------------------------------------------
+//je créer une fonction avec 2 arguments que je retourne par la suite
+function addition($nombre1, $nombre2) {
+    return $nombre1 + $nombre2;
 
+
+// pour le bonus je fais une condition pour vérifier si le 3ème argument est donné ou pas
+    //on peut utiliser  func_num_args() est une fonction native de PHP qui retourne le nombre d'arguments passés
+    // à la fonction courante.
+    //et func_get_arg() qui récupère un argument spécifique par son index
+    if (func_num_args() > 2) {
+        $nombre3 = func_get_arg(2);
+        $resultat += $nombre3;
+    }
+
+    return $resultat;
+}
 //-------------------------------------------------------------------------
 /*
  * Tests
