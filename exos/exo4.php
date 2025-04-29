@@ -15,9 +15,12 @@ ob_start();
 
 // A toi de boucler
 //-------------------------------------------------------------------------
+/* Création de la variable i initialisé à 1 */
 $i = 1;
+/* Tant que i est inférieur ou égal a 15 */
 while($i <= 15)
 {
+    /* J'affiche i et j'ajpute +1 à i */
     echo $i;
     $i++;
 }
