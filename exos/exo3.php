@@ -25,6 +25,7 @@ require_once '../inc/functions.php';
 
  // A toi de jouer pour l'étape a)
 //-------------------------------------------------------------------------
+/* Création du tableau characters */
 $characters = array(
     "kyle" => "Kyle",
     "Stan" => "Stan",
@@ -39,11 +40,13 @@ check('3a');
 
 // A toi de jouer pour l'étape b)
 //-------------------------------------------------------------------------
+/* Création du tableau characters */
 $characters = array(
     "kyle" => "Kyle",
     "Stan" => "Stan",
     "Kenny" => "Kenny"
 );
+/* Ajout du personnage "Cartman" dans le tableau */
 array_push($characters, "Cartman");
 //-------------------------------------------------------------------------
 /*
@@ -54,12 +57,15 @@ check('3b');
 
 // A toi de jouer pour le bonus
 //-------------------------------------------------------------------------
+/* Création du tableau characters */
 $characters = array(
     "kyle" => "Kyle",
     "Stan" => "Stan",
     "Kenny" => "Kenny"
 );
+/* Ajout du personnage "Cartman" dans le tableau */
 array_push($characters, "Cartman");
+/* Suppression du personnage "Kyle" */
 array_splice($characters, 2, 1);
 //-------------------------------------------------------------------------
 
