@@ -1,5 +1,6 @@
 <?php
-
+/* Tableau associatif (indexé numériquement de façon non-sequentielle). */
+/* Ses clés comencent à 1 au lieu de 0. */
 $bartPunishment = [
     1 => 'Je ne suis pas une femme de 32 ans.',
     2 => 'Je ne prendrai pas de raccourcis.',

@@ -17,7 +17,10 @@ require_once '../inc/bart.php'; // fichier déclarant la variable $bartPunishmen
 
 // A toi de jouer
 //-------------------------------------------------------------------------
-
+/* Je déclare mes variables */
+$sentence1 = $bartPunishment[1];
+$sentence4 = $bartPunishment[4];
+$sentenceX = $bartPunishment[14];
 //-------------------------------------------------------------------------
 /*
  * Tests
