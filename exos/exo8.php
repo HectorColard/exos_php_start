@@ -26,7 +26,11 @@ ob_start();
 
 // A toi de jouer
 //-------------------------------------------------------------------------
-
+$sentences = $bartPunishment;
+foreach ($sentences as $sentence) {
+    /* On va l'afficher */
+    echo $sentence;
+}
 //-------------------------------------------------------------------------
 
 // ------ Aide ------
