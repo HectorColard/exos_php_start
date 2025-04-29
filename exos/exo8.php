@@ -1,4 +1,5 @@
 <?php
+global $bartPunishment;
 require_once '../inc/functions.php';
 require_once '../inc/bart2.php'; // fichier déclarant la variable $bartPunishment
 ob_start();
@@ -26,7 +27,14 @@ ob_start();
 
 // A toi de jouer
 //-------------------------------------------------------------------------
-
+//On utilise une boucle for de 1 à 15
+//À chaque itération, on affiche la phrase (sentenceN) puis l'image (pictureN) correspondante.
+for ($i = 1; $i <= 15; $i++) {
+    // Affiche phrase
+    echo $bartPunishment['sentence' . $i] . '<br>';
+    // Affiche l'image associée
+    echo '<img src="' . $bartPunishment['picture' . $i] . '"><br>';
+}
 //-------------------------------------------------------------------------
 
 // ------ Aide ------

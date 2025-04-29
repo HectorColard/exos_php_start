@@ -1,4 +1,5 @@
 <?php
+global $bartPunishment;
 require_once '../inc/functions.php';
 require_once '../inc/bart2.php'; // fichier déclarant la variable $bartPunishment
 ob_start();
@@ -28,7 +29,15 @@ ob_start();
 
 // A toi de jouer
 //-------------------------------------------------------------------------
+// Stockage des phrases
+$sentence1 = $bartPunishment['sentence1']; // 1ère phrase
+$sentence7 = $bartPunishment['sentence7']; // 7ème phrase
+$sentenceX = $bartPunishment['sentence14']; // avant-dernière phrase (14)
 
+// Stockage des images
+$image1 = $bartPunishment['picture1'];  // 1ère image
+$image7 = $bartPunishment['picture7'];  // 7ème image
+$imageX = $bartPunishment['picture14']; // avant-dernière image (14)
 //-------------------------------------------------------------------------
 /*
  * Tests

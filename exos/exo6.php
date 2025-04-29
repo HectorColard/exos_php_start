@@ -1,4 +1,5 @@
 <?php
+global $bartPunishment;
 require_once '../inc/functions.php';
 require_once '../inc/bart.php'; // fichier déclarant la variable $bartPunishment
 ob_start();
@@ -21,7 +22,11 @@ ob_start();
 
 // A toi de jouer
 //-------------------------------------------------------------------------
+//La boucle foreach parcourt chaque élément du tableau. <br> pour saut de ligne
 
+foreach ($bartPunishment as $punishment) {
+    echo $punishment . '<br>';
+}
 //-------------------------------------------------------------------------
 /*
  * Tests
