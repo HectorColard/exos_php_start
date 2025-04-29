@@ -26,7 +26,27 @@ require_once '../inc/functions.php';
  *  et retournant la note en lettre (de A à F, en majuscule)
  */
 //-------------------------------------------------------------------------
+function convertNoteToLetter($note) {
+    // Vérifier que la note est un nombre entre 0 et 20, en faisant une condition
+    if (!is_numeric($note) || $note < 0 || $note > 20) {
+        return "Note invalide";
+    }
 
+    // Convertir la note en lettre selon la règle, en faisant une boucle
+    if ($note >= 16 && $note <= 20) {
+        return "A";
+    } elseif ($note >= 13 && $note <= 15) {
+        return "B";
+    } elseif ($note >= 10 && $note <= 12) {
+        return "C";
+    } elseif ($note >= 7 && $note <= 9) {
+        return "D";
+    } elseif ($note >= 4 && $note <= 6) {
+        return "E";
+    } else {
+        return "F";
+    }
+}
 //-------------------------------------------------------------------------
 
 /*
