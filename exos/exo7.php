@@ -28,7 +28,13 @@ ob_start();
 
 // A toi de jouer
 //-------------------------------------------------------------------------
-
+/* Je déclare mes variables */
+$sentence1 = $bartPunishment['sentence1'];
+$sentence7 = $bartPunishment['sentence7'];
+$sentenceX = $bartPunishment['sentence14'];
+$image1  = $bartPunishment['picture1'];
+$image7  = $bartPunishment['picture7'];
+$imageX  = $bartPunishment['picture14'];
 //-------------------------------------------------------------------------
 /*
  * Tests
