@@ -25,6 +25,11 @@ require_once '../inc/functions.php';
 
  // A toi de jouer pour l'étape a)
 //-------------------------------------------------------------------------
+// Étape a: Tableau avec Stan, Kyle et Kenny
+$characters = ['Stan', 'Kyle', 'Kenny'];
+print_r($characters);
+
+
 
 //-------------------------------------------------------------------------
 /*
@@ -35,7 +40,9 @@ check('3a');
 
 // A toi de jouer pour l'étape b)
 //-------------------------------------------------------------------------
-
+// Étape b: Ajout de Cartman au tableau
+$characters[] = 'Cartman';
+print_r($characters);
 //-------------------------------------------------------------------------
 /*
  * Tests du tableau avec Stan, Kyle, Kenny et désormais Cartman
@@ -45,7 +52,13 @@ check('3b');
 
 // A toi de jouer pour le bonus
 //-------------------------------------------------------------------------
-
+//Je fais un tableau avc les 4 dedans
+$characters = ['Stan', 'Kyle', 'Kenny', 'Cartman'];
+//ke crée une variable avec kenny à l'intérieur
+$element = 'Kenny';
+//je fais un unset pour suprrimer kenny du tableau
+unset($characters[array_search($element, $characters)]);
+print_r($characters);
 //-------------------------------------------------------------------------
 
 /*
