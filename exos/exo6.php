@@ -21,7 +21,13 @@ ob_start();
 
 // A toi de jouer
 //-------------------------------------------------------------------------
-
+/* Création de la variable $sentences */
+$sentences = $bartPunishment;
+/* Pour chaque élément du tableau */
+foreach ($sentences as $sentence) {
+    /* On va l'afficher */
+    echo $sentence;
+}
 //-------------------------------------------------------------------------
 /*
  * Tests
