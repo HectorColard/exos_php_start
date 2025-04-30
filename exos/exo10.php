@@ -1,4 +1,4 @@
-<?php
+<?php global $algo;
 
 /**
  * Pas touche ! 
@@ -42,6 +42,16 @@ $instructionList[] = $algo[8];
 
 // A toi d'écrire la suite...
 //-------------------------------------------------------------------------
+$instructionList = [];
+$instructionList[] = $algo[8]; // définir le nombre à 42
+$instructionList[] = $algo[5]; // on récupère le nombre saisi par l'utilisateur en paramètre d'URL
+$instructionList[] = $algo[1]; // si le nombre saisi est plus petit que le nombre attendu
+$instructionList[] = $algo[6]; // alors afficher message : 'Le nombre saisi est trop petit !'
+$instructionList[] = $algo[7]; // ou sinon
+$instructionList[] = $algo[3]; // si le nombre saisi est plus grand que le nombre attendu
+$instructionList[] = $algo[4]; // alors afficher le message : 'Le nombre saisi est trop grand !'
+$instructionList[] = $algo[0]; //  ou sinon
+$instructionList[] = $algo[2]; // afficher le message de victoire
 
 //-------------------------------------------------------------------------
 /*

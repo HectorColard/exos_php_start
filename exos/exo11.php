@@ -22,7 +22,17 @@ require_once '../inc/functions.php';
 // Entrée : rien
 // Sortie : le tableau de tous les numéros de la grille
 //-------------------------------------------------------------------------
+// Génération des 5 numéros principaux entre 1 et 49
+$numerosPrincipaux = range(1, 49);
+shuffle($numerosPrincipaux);
+$numerosPrincipaux = array_slice($numerosPrincipaux, 0, 5);
 
+// Génération du numéro complémentaire entre 1 et 10
+$numeroComplementaire = mt_rand(1, 10);
+
+// Création du tableau final
+$grilleLoto = $numerosPrincipaux;
+$grilleLoto[] = $numeroComplementaire;
 /** 
  * Tests
  * Pas touche !

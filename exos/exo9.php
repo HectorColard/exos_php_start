@@ -15,7 +15,20 @@ require_once '../inc/functions.php';
  * Analysez l'URL pour comprendre quelles valeurs sont attendues dans chacune de ces variables
  */
 //-------------------------------------------------------------------------
+// Récupération sécurisée des paramètres de l'url
+$jeu = isset($_GET['game']) ? $_GET['game'] : '';
+$premierJoueur = isset($_GET['player1']) ? $_GET['player1'] : '';
+$secondJoueur = isset($_GET['player2']) ? $_GET['player2'] : '';
 
+// Affichage des valeurs qu'on récupère
+if ($jeu && $premierJoueur && $secondJoueur) {
+    echo "Jeu choisi : " . htmlspecialchars($jeu) . "<br>";
+    echo "Premier joueur : " . htmlspecialchars($premierJoueur) . "<br>";
+    echo "Second joueur : " . htmlspecialchars($secondJoueur) . "<br>";
+} else {
+    echo "Erreur : il manque au moins une information dans l'URL.<br>";
+    echo "Paramètres attendus : ?jeu=...&premierJoueur=...&secondJoueur=...";
+}
 //-------------------------------------------------------------------------
 /*
  * Tests
